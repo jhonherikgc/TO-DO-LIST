@@ -2,22 +2,24 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>To Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>To-do List</title>
   <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
-  <h1>Minha Lista de Tarefas</h1>
-  <input type="text" id="inputTarefa" placeholder="Digite uma nova tarefa">
-  <button id="btnAdicionar">Adicionar</button>
+  <section class="container">
+    <h1>A tua lista de <span class="auto-type"></span></h1>
+    <p>
+      <input type="text" class="input-tarefa">
+      <button class="btn-tarefa">Adicionar nova tarefa</button>
+    </p>
 
-  <ul id="listaTarefas"></ul>
+    <ul class="tarefas"></ul>
+  </section>
 
+  <script src="/js/main.js"></script>
+  <script src="/js/typing.js"></script>
 </body>
-</html>
 
-
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-<script src="js/main.js"></script>
-<script src="js/typing.js"></script>
-</body>
 </html>
