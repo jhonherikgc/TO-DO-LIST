@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
   --primary-color: rgba(255, 255, 255, 0.918);
-  --primary-color-darker: rgba(0, 0, 0, 0.753);
+  --primary-color-darker: rgb(34, 33, 33);
 }
 
 * {
@@ -21,9 +21,15 @@ body {
 .container {
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
+  margin-top: 10em;
+  background: #636363;
   padding: 20px;
   border-radius: 10px;
+  height: 30em;
+}
+
+.container h1 {
+  color: white;
 }
 
 span {
