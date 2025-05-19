@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-:root {
-  --primary-color: rgba(255, 255, 255, 0.918);
-  --primary-color-darker: rgb(34, 33, 33);
-}
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 * {
   box-sizing: border-box;
   outline: 0;
@@ -12,49 +7,43 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color-darker);
-  font-family: 'Open sans', sans-serif;
+  background: #222121;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
+  color: white;
 }
 
 .container {
   max-width: 640px;
-  margin: 50px auto;
-  margin-top: 10em;
+  margin: 10em auto;
   background: #636363;
   padding: 20px;
   border-radius: 10px;
   height: 30em;
 }
-
 .container h1 {
   color: white;
 }
 
-span {
-  color: aqua;
-}
-
-form input, form label, form button {
+form input,
+form label,
+form button {
   display: block;
   width: 100%;
   margin-bottom: 10px;
 }
-
 form input {
   font-size: 24px;
   height: 50px;
   padding: 0 20px;
 }
-
 form input:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid rgba(255, 255, 255, 0.92);
 }
-
 form button {
   border: none;
-  background: var(--primary-color);
+  background: rgba(255, 255, 255, 0.92);
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -62,7 +51,10 @@ form button {
   cursor: pointer;
   margin-top: 30px;
 }
-
 form button:hover {
-  background: var(--primary-color-darker);
+  background: #222121;
 }
+
+span {
+  color: aqua;
+}/*# sourceMappingURL=styles.css.map */

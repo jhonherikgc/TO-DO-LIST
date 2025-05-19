@@ -1,0 +1,80 @@
+// ======== VARIÁVEIS DE CORES ========
+$primary-color: rgba(255, 255, 255, 0.92);   // Branco translúcido
+$primary-color-darker: #222121;             // Quase preto
+$background-container: #636363;             // Cinza médio
+$text-color: white;
+$accent-color: aqua;                        // Destaque
+$button-hover-bg: $primary-color-darker;
+
+// ======== BASE ========
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $primary-color-darker;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: $text-color;
+}
+
+// ======== CONTAINER ========
+.container {
+  max-width: 640px;
+  margin: 10em auto;
+  background: $background-container;
+  padding: 20px;
+  border-radius: 10px;
+  height: 30em;
+
+  h1 {
+    color: $text-color;
+  }
+}
+
+// ======== FORMULARIO ========
+form {
+  input,
+  label,
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+
+    &:focus {
+      outline: 1px solid $primary-color;
+    }
+  }
+
+  button {
+    border: none;
+    background: $primary-color;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+
+    &:hover {
+      background: $button-hover-bg;
+    }
+  }
+}
+
+// ======== ELEMENTOS LIVRES ========
+span {
+  color: $accent-color;
+}
