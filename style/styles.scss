@@ -1,9 +1,11 @@
 // ======== VARIÁVEIS DE CORES ========
 $primary-color: rgba(255, 255, 255, 0.92);   // Branco translúcido
-$primary-color-darker: #222121;             // Quase preto
+$primary-color-darker: #212122;             // Quase preto
 $background-container: #636363;             // Cinza médio
+$background-container-light: #F2F2F2;
+$background-container-dark: #011826;
 $text-color: white;
-$accent-color: #bc11ff;                        // Destaque
+$accent-color: #263DBF;                        // Destaque
 $button-hover-bg: $primary-color-darker;
 
 // ======== BASE ========
@@ -73,10 +75,22 @@ form {
     }
   }
 }
-
-.botaoEdita {
-  background-color: palegreen;
+.btn-tarefa {
+  border-radius: 40px;
+  width: 10vh;
+  height: 34px;
+  background-color: #263DBF;
+  color: #F2F2F2; 
+  margin-right: 6px;
 }
+
+.input-tarefa {
+  border-radius: 40px;
+  width: 40vh;
+  height: 34px;
+  margin-right: 6px;
+}
+
 
 // ======== ELEMENTOS LIVRES ========
 span {
@@ -110,7 +124,7 @@ span {
       content: "";
       height: 26px; width: 26px;
       left: 4px; bottom: 4px;
-      background-color: #bc11ff;
+      background-color: #233ED9;
       transition: 0.4s;
       border-radius: 50%;
     }
@@ -126,13 +140,22 @@ span {
 }
 
 body.dark {
-  --bg: #121212;
+  .container {
+    border-radius: 30px;
+    border: solid #263DBF 10px
+  }
+  --bg: #0D0D0D;
   --text: #ffffff;
   --span:$accent-color;
+  
 }
 
 body.light {
-  --bg: #f0f0f0;
+  .container {
+    border-radius: 30px;
+    border: solid white 10px;
+  }
+  --bg: #929292da;
   --text: #000000;
   --span:$accent-color;
 }

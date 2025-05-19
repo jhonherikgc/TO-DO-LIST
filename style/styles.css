@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #222121;
+  background: #212122;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
@@ -52,15 +52,27 @@ form button {
   margin-top: 30px;
 }
 form button:hover {
-  background: #222121;
+  background: #212122;
 }
 
-.botaoEdita {
-  background-color: palegreen;
+.btn-tarefa {
+  border-radius: 40px;
+  width: 10vh;
+  height: 34px;
+  background-color: #263DBF;
+  color: #F2F2F2;
+  margin-right: 6px;
+}
+
+.input-tarefa {
+  border-radius: 40px;
+  width: 40vh;
+  height: 34px;
+  margin-right: 6px;
 }
 
 span {
-  color: #bc11ff;
+  color: #263DBF;
 }
 
 .switch {
@@ -92,7 +104,7 @@ span {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #bc11ff;
+  background-color: #233ED9;
   transition: 0.4s;
   border-radius: 50%;
 }
@@ -104,15 +116,23 @@ span {
 }
 
 body.dark {
-  --bg: #121212;
+  --bg: #0D0D0D;
   --text: #ffffff;
   --span:$accent-color;
 }
+body.dark .container {
+  border-radius: 30px;
+  border: solid #263DBF 10px;
+}
 
 body.light {
-  --bg: #f0f0f0;
+  --bg: #929292da;
   --text: #000000;
   --span:$accent-color;
+}
+body.light .container {
+  border-radius: 30px;
+  border: solid white 10px;
 }
 
 body {
