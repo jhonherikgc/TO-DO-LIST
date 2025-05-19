@@ -3,7 +3,7 @@ $primary-color: rgba(255, 255, 255, 0.92);   // Branco translúcido
 $primary-color-darker: #222121;             // Quase preto
 $background-container: #636363;             // Cinza médio
 $text-color: white;
-$accent-color: aqua;                        // Destaque
+$accent-color: #bc11ff;                        // Destaque
 $button-hover-bg: $primary-color-darker;
 
 // ======== BASE ========
@@ -74,6 +74,10 @@ form {
   }
 }
 
+.botaoEdita {
+  background-color: palegreen;
+}
+
 // ======== ELEMENTOS LIVRES ========
 span {
   color: $accent-color;
@@ -97,7 +101,7 @@ span {
     cursor: pointer;
     top: 0; left: 0;
     right: 0; bottom: 0;
-    background-color: #ccc;
+    background-color: #26202952;
     transition: 0.4s;
     border-radius: 34px;
 
@@ -106,17 +110,35 @@ span {
       content: "";
       height: 26px; width: 26px;
       left: 4px; bottom: 4px;
-      background-color: white;
+      background-color: #bc11ff;
       transition: 0.4s;
       border-radius: 50%;
     }
   }
 
   input:checked + .slider {
-    background-color: #6c63ff;
+    background-color: #ffffff;
   }
 
   input:checked + .slider::before {
     transform: translateX(26px);
   }
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #ffffff;
+  --span:$accent-color;
+}
+
+body.light {
+  --bg: #f0f0f0;
+  --text: #000000;
+  --span:$accent-color;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
 }
