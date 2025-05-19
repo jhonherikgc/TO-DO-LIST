@@ -27,6 +27,7 @@ function editaTarefa(li) {
   li.appendChild(botaoEdita);
 
   botaoEdita.addEventListener('click', function () {
+
     // Evita múltiplos inputs se clicar mais de uma vez (erro solucionado)
     if (li.querySelector('input')) return;
 
@@ -59,6 +60,8 @@ function editaTarefa(li) {
       }
     }
 
+    // CSS
+    input.classList.add('input-edicao');
     input.addEventListener('blur', salvarEdicao);
     input.addEventListener('keypress', function (e) {
       if (e.key === 'Enter') {
