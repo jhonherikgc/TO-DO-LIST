@@ -19,14 +19,66 @@ function limpaInput() {
   inputTarefa.focus();
 }
 
+function editaTarefa(li) {
+  const botaoEdita = document.createElement('button');
+  botaoEdita.innerText = '✎';
+  botaoEdita.setAttribute('class', 'editar');
+  botaoEdita.setAttribute('title', 'Editar esta tarefa');
+  li.appendChild(botaoEdita);
+
+  botaoEdita.addEventListener('click', function () {
+    // Evita múltiplos inputs se clicar mais de uma vez (erro solucionado)
+    if (li.querySelector('input')) return;
+
+    // Encontra o texto da tarefa (antes dos botões)
+    const textoNode = Array.from(li.childNodes).find(
+      node => node.nodeType === Node.TEXT_NODE && node.textContent.trim() !== ''
+    );
+
+    const textoAtual = textoNode?.textContent.trim() || '';
+
+    // Cria o input
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = textoAtual;
+    input.style.fontSize = '1em';
+    input.style.width = '70%';
+
+    // Substitui o texto pelo input
+    if (textoNode) li.replaceChild(input, textoNode);
+    else li.insertBefore(input, li.firstChild);
+
+    input.focus();
+
+    function salvarEdicao() {
+      const novoTexto = input.value.trim();
+      if (novoTexto) {
+        const novoTextoNode = document.createTextNode(novoTexto + ' ');
+        li.replaceChild(novoTextoNode, input);
+        salvarTarefas(); 
+      }
+    }
+
+    input.addEventListener('blur', salvarEdicao);
+    input.addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        salvarEdicao();
+      }
+    });
+  });
+}
+
+
+
 function criaBotaoApagar(li) {
   li.innerText += ' ';
   const botaoApagar = document.createElement('button');
-  botaoApagar.innerText = 'Apagar';
+  botaoApagar.innerText = '🗑';
   // botaoApagar.classList.add('apagar');
   botaoApagar.setAttribute('class', 'apagar');
   botaoApagar.setAttribute('title', 'Apagar esta tarefa');
   li.appendChild(botaoApagar);
+
 }
 
 function criaTarefa(textoInput) {
@@ -35,6 +87,7 @@ function criaTarefa(textoInput) {
   tarefas.appendChild(li);
   limpaInput();
   criaBotaoApagar(li);
+  editaTarefa(li);
   salvarTarefas();
 }
 

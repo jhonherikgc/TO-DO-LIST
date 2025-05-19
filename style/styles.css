@@ -73,3 +73,40 @@ form button:hover {
 span {
   color: aqua;
 }/*# sourceMappingURL=styles.css.map */
+
+
+/* botões */
+.apagar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darkred;
+  }
+}
+
+.editar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-left: 6px;
+
+  &:hover {
+    background-color: darkred;
+  }
+}
