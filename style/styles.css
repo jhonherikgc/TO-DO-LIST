@@ -64,6 +64,7 @@ form button:hover {
   margin-right: 6px;
   font-family: "nunito";
   font-size: medium;
+  box-shadow: none;
 }
 
 .input-tarefa {
@@ -71,6 +72,7 @@ form button:hover {
   width: 40vh;
   height: 34px;
   margin-right: 6px;
+  box-shadow: none;
 }
 
 span {
