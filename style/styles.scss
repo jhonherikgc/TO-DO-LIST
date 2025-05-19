@@ -5,11 +5,11 @@ $background-container: #636363;             // Cinza médio
 $background-container-light: #F2F2F2;
 $background-container-dark: #011826;
 $text-color: white;
-$accent-color: #263DBF;                        // Destaque
+$accent-color: #00b7ff;                        // Destaque
 $button-hover-bg: $primary-color-darker;
 
 // ======== BASE ========
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');;
 
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   background: $primary-color-darker;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'nunito';
   font-size: 1.3em;
   line-height: 1.5em;
   color: $text-color;
@@ -79,9 +79,11 @@ form {
   border-radius: 40px;
   width: 10vh;
   height: 34px;
-  background-color: #263DBF;
+  background-color: #056CF2;
   color: #F2F2F2; 
   margin-right: 6px;
+  font-family: 'nunito';
+  font-size: medium;
 }
 
 .input-tarefa {
@@ -124,7 +126,7 @@ span {
       content: "";
       height: 26px; width: 26px;
       left: 4px; bottom: 4px;
-      background-color: #233ED9;
+      background-color: #056CF2;
       transition: 0.4s;
       border-radius: 50%;
     }
@@ -142,7 +144,7 @@ span {
 body.dark {
   .container {
     border-radius: 30px;
-    border: solid #263DBF 10px
+    border: solid #056CF2 10px
   }
   --bg: #0D0D0D;
   --text: #ffffff;
@@ -154,6 +156,7 @@ body.light {
   .container {
     border-radius: 30px;
     border: solid white 10px;
+    background-color: #929292da;
   }
   --bg: #929292da;
   --text: #000000;
