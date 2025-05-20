@@ -75,6 +75,15 @@ form button:hover {
   box-shadow: none;
 }
 
+/* input edit */
+.input-edicao {
+  border-radius: 40px;
+  width: 40vh;
+  height: 34px;
+  box-shadow: none;
+  margin-right: 10px;
+}
+
 span {
   color: #00b7ff;
 }
@@ -120,13 +129,14 @@ span {
 }
 
 body.dark {
-  --bg: #0D0D0D;
+  --bg: #08171E;
   --text: #ffffff;
   --span:$accent-color;
 }
 body.dark .container {
   border-radius: 30px;
   border: solid #056CF2 10px;
+  background-color: #08171E;
 }
 
 body.light {

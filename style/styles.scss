@@ -95,6 +95,15 @@ form {
   box-shadow: none;
 }
 
+/* input edit */
+.input-edicao {
+  border-radius: 40px;
+  width: 40vh;
+  height: 34px;
+  box-shadow: none;
+  margin-right: 10px;
+}
+
 
 // ======== ELEMENTOS LIVRES ========
 span {
@@ -146,9 +155,10 @@ span {
 body.dark {
   .container {
     border-radius: 30px;
-    border: solid #056CF2 10px
+    border: solid #056CF2 10px;
+    background-color: #08171E;
   }
-  --bg: #0D0D0D;
+  --bg: #08171E;
   --text: #ffffff;
   --span:$accent-color;
   
@@ -170,3 +180,4 @@ body {
   color: var(--text);
   transition: background 0.3s, color 0.3s;
 }
+
