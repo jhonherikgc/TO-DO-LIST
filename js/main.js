@@ -21,7 +21,7 @@ function limpaInput() {
 
 function editaTarefa(li) {
   const botaoEdita = document.createElement('button');
-  botaoEdita.innerText = '✎';
+  botaoEdita.innerText = '✏️';
   botaoEdita.setAttribute('class', 'editar');
   botaoEdita.setAttribute('title', 'Editar esta tarefa');
   li.appendChild(botaoEdita);
@@ -76,7 +76,7 @@ function editaTarefa(li) {
 function criaBotaoApagar(li) {
   li.innerText += ' ';
   const botaoApagar = document.createElement('button');
-  botaoApagar.innerText = '🗑';
+  botaoApagar.innerText = '🗑️';
   // botaoApagar.classList.add('apagar');
   botaoApagar.setAttribute('class', 'apagar');
   botaoApagar.setAttribute('title', 'Apagar esta tarefa');
