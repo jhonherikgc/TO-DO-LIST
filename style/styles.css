@@ -64,7 +64,7 @@ form button:hover {
   margin-right: 6px;
   font-family: "nunito";
   font-size: medium;
-  box-shadow: none;
+  border: none;
 }
 
 .input-tarefa {
@@ -72,7 +72,7 @@ form button:hover {
   width: 40vh;
   height: 34px;
   margin-right: 6px;
-  box-shadow: none;
+  border: none;
 }
 
 /* input edit */
@@ -82,6 +82,7 @@ form button:hover {
   height: 34px;
   box-shadow: none;
   margin-right: 10px;
+  border: none;
 }
 
 span {
@@ -109,6 +110,7 @@ span {
   background-color: rgba(38, 32, 41, 0.3215686275);
   transition: 0.4s;
   border-radius: 34px;
+  border: solid 1px black;
 }
 .switch .slider::before {
   position: absolute;
@@ -154,4 +156,15 @@ body {
   background: var(--bg);
   color: var(--text);
   transition: background 0.3s, color 0.3s;
+}
+
+.editar,
+.apagar {
+  background-color: #056CF2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+  border: #000000;
+  margin-left: 10px;
 }/*# sourceMappingURL=styles.css.map */

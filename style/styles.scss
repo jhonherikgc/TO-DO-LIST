@@ -84,7 +84,7 @@ form {
   margin-right: 6px;
   font-family: 'nunito';
   font-size: medium;
-  box-shadow: none;
+  border: none;
 }
 
 .input-tarefa {
@@ -92,7 +92,7 @@ form {
   width: 40vh;
   height: 34px;
   margin-right: 6px;
-  box-shadow: none;
+  border: none;
 }
 
 /* input edit */
@@ -102,6 +102,7 @@ form {
   height: 34px;
   box-shadow: none;
   margin-right: 10px;
+  border: none;
 }
 
 
@@ -131,6 +132,7 @@ span {
     background-color: #26202952;
     transition: 0.4s;
     border-radius: 34px;
+    border: solid 1px black;
 
     &::before {
       position: absolute;
@@ -181,3 +183,14 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+// ========== EMOJIS ===========
+.editar,
+.apagar {
+  background-color: #056CF2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: none;
+  border: #000000;
+  margin-left: 10px;
+}
