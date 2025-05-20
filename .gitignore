@@ -1,8 +1,6 @@
-.DS_Store
-Thumbs.db
 .vscode/
 *.log
 node_modules/
 dist/
 .env
-.styles.css.map
+/style/styles.css.map
