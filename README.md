@@ -1,14 +1,26 @@
-<h1 style="text-align:center";>To-do List Interativa</h1>
-<div>
-    <h2>Para que serve?</h2>
-<ul>
-    <li>To-do List (Principal)</li>
-    <li>Lista de compras</li>
-    <li>Anotações</li>
-</ul>
-    <h2>Como funciona?</h2>
-<ul>
-    <li>Adicionar</li>
-    <li>Editar</li>
-    <li>Remover</li>
-</div> 
+# 📝 To-Do List Web App
+
+Uma aplicação de lista de tarefas simples e funcional, desenvolvida com **HTML**, **SCSS** e **JavaScript**, com suporte a **modo claro e escuro** e edição em tempo real.
+
+## 🚀 Funcionalidades
+
+- ✅ Adicionar tarefas
+- 🗑️ Remover tarefas
+- ✏️ Editar tarefas
+- 💾 Salvamento local com `localStorage`
+- 🎨 Modo Claro e Escuro (Dark/Light Mode)
+- 💻 Design responsivo
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5
+- SCSS (pré-processado em CSS)
+- JavaScript (puro)
+- Google Fonts (`Open Sans`)
+- Git & GitHub
+
+## 🌗 Alternância de Tema
+
+Você pode alternar entre o modo **claro** e o **escuro** usando o botão de troca no topo da interface. O estilo muda dinamicamente e afeta o container, botões e background.
+
+
