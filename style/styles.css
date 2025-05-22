@@ -209,3 +209,23 @@ body {
     width: 15vh;
   }
 }
+
+/* Estilos para telas grandes - ex: 1366px */
+@media (min-width: 1366px) {
+  body {
+    max-width: 1100px;
+    margin: 50px auto;
+  }
+
+  .input-tarefa {
+    width: 50vh;
+  }
+
+  .btn-tarefa {
+    width: 12vh;
+  }
+
+  .container {
+    margin-top: 15vh;
+  }
+}
